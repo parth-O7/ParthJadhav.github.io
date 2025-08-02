@@ -1,1 +1,209 @@
-<h1>hello form github</h1>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar - Your Awesome Company</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #1a1a2e;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(148, 108, 242, 0.15), transparent 30%),
+                radial-gradient(circle at 85% 30%, rgba(52, 211, 153, 0.15), transparent 30%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold text-gray-900">
+                    Stellar<span class="text-indigo-500">.</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-indigo-500 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-indigo-500 transition-colors">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-indigo-500 transition-colors">Services</a>
+                    <a href="#contact" class="text-gray-600 hover:text-indigo-500 transition-colors">Contact</a>
+                </nav>
+                <a href="#contact" class="hidden md:block bg-indigo-500 text-white px-5 py-2 rounded-lg font-medium hover:bg-indigo-600 transition-all duration-300 shadow-md">
+                    Get Started
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="#home" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100 rounded">Home</a>
+                <a href="#about" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100 rounded">About</a>
+                <a href="#services" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100 rounded">Services</a>
+                <a href="#contact" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100 rounded">Contact</a>
+                 <a href="#contact" class="block mt-2 text-center bg-indigo-500 text-white px-5 py-2 rounded-lg font-medium hover:bg-indigo-600 transition-all duration-300">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg pt-32 pb-20 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Build Your Future With Us</h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">We are a team of talented developers creating amazing web applications and solutions for businesses of all sizes.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#services" class="bg-indigo-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition-all duration-300 transform hover:scale-105 shadow-lg">Our Services</a>
+                    <a href="#contact" class="bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 shadow-lg">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Our+Team" alt="Our Team" class="rounded-lg shadow-2xl w-full">
+                    </div>
+                    <div class="text-left">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">About Our Mission</h2>
+                        <p class="text-gray-600 mb-4">We believe in the power of technology to transform businesses. Our mission is to provide innovative, reliable, and scalable solutions that help our clients succeed in the digital world.</p>
+                        <p class="text-gray-600 mb-6">With a focus on collaboration and a passion for excellence, we work closely with you to understand your unique challenges and deliver results that exceed expectations.</p>
+                        <div class="flex space-x-4">
+                            <div class="bg-indigo-100 p-3 rounded-lg text-indigo-500"><i data-feather="award"></i></div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Quality Focused</h3>
+                                <p class="text-gray-500">Delivering high-quality, tested code.</p>
+                            </div>
+                        </div>
+                         <div class="flex space-x-4 mt-4">
+                            <div class="bg-indigo-100 p-3 rounded-lg text-indigo-500"><i data-feather="users"></i></div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Client Centric</h3>
+                                <p class="text-gray-500">Your success is our top priority.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">What We Offer</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Our services are designed to provide comprehensive solutions for your digital needs.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div class="bg-indigo-500 text-white rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-lg">
+                            <i data-feather="layout" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                        <p class="text-gray-600">Creating responsive, high-performance websites with modern technologies.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div class="bg-emerald-500 text-white rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-lg">
+                            <i data-feather="smartphone" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Mobile Apps</h3>
+                        <p class="text-gray-600">Building intuitive and engaging mobile applications for iOS and Android.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-rose-500 text-white rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-lg">
+                        <div class="bg-rose-500 text-white rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-lg">
+                            <i data-feather="cloud" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Cloud Solutions</h3>
+                        <p class="text-gray-600">Leveraging cloud infrastructure for scalable and secure backends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Get In Touch</h2>
+                    <p class="text-gray-600 mt-2">Have a project in mind? We'd love to hear from you.</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md">
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition">
+                            <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition">
+                        </div>
+                        <div class="mt-6">
+                            <input type="text" placeholder="Subject" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition">
+                        </div>
+                        <div class="mt-6">
+                            <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"></textarea>
+                        </div>
+                        <div class="mt-6 text-center">
+                            <button type="submit" class="bg-indigo-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition-all duration-300 shadow-md">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Stellar. All Rights Reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i data-feather="github"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
+
